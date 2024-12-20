@@ -36,7 +36,7 @@ export default function Home() {
         <div className="flex items-center gap-4">
           <Image
             className="rounded-lg w-1/4 h-full"
-            src="/images/philhighqual1.jpg"
+            src="/images/philufl1.jpg"
             alt="Phil Fazio"
             width={180}
             height={180}
@@ -44,7 +44,7 @@ export default function Home() {
           />
           <Image
             className="rounded-lg w-1/4 h-full"
-            src="/images/phillowqual1.jpg"
+            src="/images/philice1.jpg"
             alt="Phil Fazio"
             width={180}
             height={180}
@@ -52,7 +52,7 @@ export default function Home() {
           />
           <Image
             className="rounded-lg w-1/4 h-full"
-            src="/images/phillowqual2.jpg"
+            src="/images/philice2.jpg"
             alt="Phil Fazio"
             width={180}
             height={180}
@@ -60,7 +60,7 @@ export default function Home() {
           />
           <Image
             className="rounded-lg w-1/4 h-full"
-            src="/images/phillowqual3.jpg"
+            src="/images/philice3.jpg"
             alt="Phil Fazio"
             width={180}
             height={180}
@@ -77,7 +77,7 @@ export default function Home() {
             <div className="flex items-start gap-4">
               <Image
                 className="rounded-lg"
-                src="/images/flint-firebirds.jpg"
+                src="/images/Flint_Firebirds_logo.svg.png"
                 alt="Flint Firebirds"
                 width={80}
                 height={80}
@@ -85,13 +85,13 @@ export default function Home() {
               <div>
                 <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200 transition-text duration-500">Head Athletic Trainer for the Flint Firebirds</h4>
                 <p className="text-gray-600 dark:text-gray-400 transition-text duration-500">Phil is currently the head athletic trainer for the Flint Firebirds, where he ensures the health and performance of the hockey team.</p>
-                <a href="https://flintfirebirds.com" className="text-blue-500">Learn more</a>
+                <a href="https://chl.ca/ohl-firebirds/" className="text-blue-500" target="_blank">Learn more</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Image
                 className="rounded-lg"
-                src="/images/ufl-team.jpg"
+                src="/images/Michigan_Panthers_transparent.png"
                 alt="UFL Team"
                 width={80}
                 height={80}
@@ -99,12 +99,13 @@ export default function Home() {
               <div>
                 <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200 transition-text duration-500">Athletic Trainer for a UFL team</h4>
                 <p className="text-gray-600 dark:text-gray-400 transition-text duration-500">Phil has experience working as an athletic trainer for a UFL team, where he was responsible for the players' physical health and injury prevention.</p>
+                <a href="https://illinoisstate.edu" className="text-blue-500" target="_blank">Learn more</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Image
                 className="rounded-lg"
-                src="/images/isu-hockey.jpg"
+                src="/images/ISU-Seal_1C_186.png"
                 alt="ISU Hockey"
                 width={80}
                 height={80}
@@ -112,7 +113,7 @@ export default function Home() {
               <div>
                 <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200 transition-text duration-500">Hockey Coach at Illinois State University (ISU)</h4>
                 <p className="text-gray-600 dark:text-gray-400 transition-text duration-500">Phil also served as a hockey coach at Illinois State University, where he coached and mentored the university's hockey team.</p>
-                <a href="https://illinoisstate.edu" className="text-blue-500">Learn more</a>
+                <a href="https://illinoisstate.edu" className="text-blue-500" target="_blank">Learn more</a>
               </div>
             </div>
           </div>
