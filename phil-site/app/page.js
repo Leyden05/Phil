@@ -19,51 +19,63 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 pb-20 gap-16 sm:p-20 bg-gray-100 dark:bg-gray-900 transition-background duration-500">
-      <header className="w-full flex justify-between items-center">
-        <div className="text-left">
+    <div className="flex flex-col items-center justify-center min-h-screen p-8 pb-20 sm:p-20 bg-gray-100 dark:bg-darkBlue transition-background duration-500">
+      <header className="w-full flex justify-between">
+        <div className="text-left z-10 lg:mt-48">
           <h1 className="text-9xl font-bold text-gray-800 dark:text-gray-200 transition-text duration-500">Phil Fazio</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 transition-text duration-500 ml-2">Head Athletic Trainer for the Flint Firebirds</p>
+          <p className="text-3xl text-gray-600 dark:text-gray-400 transition-text duration-500 ml-2">Head Athletic Trainer for the Flint Firebirds</p>
         </div>
+        <div className="hidden lg:block absolute top-40 right-20 w-1/3 h-3/4 bg-lightGold rounded-lg transform rotate-12 z-0"></div>
+        <Image
+            className="md:block hidden rounded-lg w-1/2 max-w-[40%] h-3/4 z-10"
+            src="/images/philnobg1.png"
+            alt="Phil Fazio"
+            width={1000}
+            height={1500}
+            priority
+          />
+      </header>
         <button
           onClick={toggleDarkMode}
-          className="p-2 rounded-full bg-gray-300 dark:bg-gray-700 focus:outline-none transition-background duration-500"
+          className="absolute top-20 right-20 p-2 rounded-full bg-gray-300 dark:bg-gray-700 focus:outline-none transition-background duration-500 z-10"
         >
           {darkMode ? 'Light Mode' : 'Dark Mode'}
         </button>
-      </header>
-      <main className="flex flex-col items-center gap-8 sm:items-start">
+      <div className="bg-lightGold p-6 w-full mb-8">
+
+</div>
+      <main className="flex flex-col items-center gap-8 sm:items-start z-10">
         <div className="flex items-center gap-4">
           <Image
             className="rounded-lg w-1/4 h-full"
             src="/images/philufl1.jpg"
             alt="Phil Fazio"
-            width={180}
-            height={180}
+            width={1000}
+            height={1000}
             priority
           />
           <Image
             className="rounded-lg w-1/4 h-full"
             src="/images/philice1.jpg"
             alt="Phil Fazio"
-            width={180}
-            height={180}
+            width={1000}
+            height={1000}
             priority
           />
           <Image
             className="rounded-lg w-1/4 h-full"
             src="/images/philice2.jpg"
             alt="Phil Fazio"
-            width={180}
-            height={180}
+            width={1000}
+            height={1000}
             priority
           />
           <Image
             className="rounded-lg w-1/4 h-full"
             src="/images/philice3.jpg"
             alt="Phil Fazio"
-            width={180}
-            height={180}
+            width={1000}
+            height={1000}
             priority
           />
         </div>
@@ -121,7 +133,7 @@ export default function Home() {
         <section className="text-center sm:text-left">
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 transition-text duration-500">Contact</h2>
           <p className="text-gray-600 dark:text-gray-400 mt-4 transition-text duration-500">
-            You can reach Phil at <a href="mailto:phil.fazio@flintfirebirds.com" className="text-blue-500">phil.fazio@flintfirebirds.com</a>.
+            You can reach Phil at <a href="mailto:philip@flintfirebirds.com" className="text-blue-500">philip@flintfirebirds.com</a>.
           </p>
         </section>
       </main>

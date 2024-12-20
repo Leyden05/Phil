@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        darkBlue: "#000814",
+        mediumBlue: "#001D3D",
+        lightBlue: "#003566",
+        gold: "#FFC300",
+        lightGold: "#FFD60A",
       },
       transitionProperty: {
         'background': 'background-color',
