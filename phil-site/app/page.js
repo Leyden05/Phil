@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -10,6 +12,7 @@ export default function Home() {
   const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
+    AOS.init({});
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {
@@ -73,14 +76,18 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen p-8 pb-20 sm:p-20 bg-gray-100 dark:bg-darkBlue transition-background duration-500">
       <header className="w-full flex justify-between">
         <div className="text-left z-10 lg:mt-48">
-          <h1 className="text-9xl font-bold text-gray-800 dark:text-gray-200 transition-text duration-500">
+          <h1 className="text-9xl font-bold text-gray-800 dark:text-gray-200 transition-text duration-500"
+          data-aos="fade-up">
             Phil Fazio
           </h1>
-          <p className="text-3xl text-gray-600 dark:text-gray-400 transition-text duration-500 ml-2">
+          <p className="text-3xl text-gray-600 dark:text-gray-400 transition-text duration-500 ml-2"
+          data-aos="fade-up"
+          data-aos-delay="600">
             Head Athletic Trainer for the Flint Firebirds
           </p>
         </div>
-        <div className="hidden lg:block absolute top-40 right-20 w-1/3 h-3/4 bg-lightGold rounded-lg transform rotate-12 z-0"></div>
+        <div className="hidden lg:block absolute top-40 right-20 w-1/3 h-3/4 bg-lightGold rounded-lg transform rotate-12 z-0"
+        data-aos="fade-up"></div>
         <Image
           className="md:block hidden rounded-lg w-1/2 max-w-[40%] h-3/4 z-10"
           src="/images/philnobg1.png"
@@ -92,7 +99,7 @@ export default function Home() {
       </header>
       <button
         onClick={toggleDarkMode}
-        className="absolute top-20 right-20 p-2 rounded-full bg-gray-300 dark:bg-gray-700 focus:outline-none transition-background duration-500 z-10"
+        className="absolute top-10 right-10 lg:top-20 lg:right-20 p-2 rounded-full bg-gray-300 dark:bg-gray-700 focus:outline-none transition-background duration-500 z-10"
       >
         {darkMode ? (
           <svg
@@ -131,28 +138,38 @@ export default function Home() {
         )}
       </button>
 
-      <div className="bg-lightGold p-6 w-full mb-8 rounded-lg"></div>
+      <div className="bg-lightGold p-6 w-full mt-4 lg:mt-0 mb-8 rounded-lg z-2"
+      data-aos="fade-up"
+      data-aos-delay="300"></div>
       <main className="flex flex-col items-center gap-8 sm:items-start z-10">
         <section className="text-center sm:text-left">
-          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 transition-text duration-500">
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 transition-text duration-500"
+          data-aos="fade-up"
+          data-aos-delay="600">
             About Phil
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 mt-4 transition-text duration-500">
+          <p className="text-gray-600 dark:text-gray-400 mt-4 transition-text duration-500"
+          data-aos="fade-up"
+          data-aos-delay="600">
             Phil Fazio is the head athletic trainer for the Flint Firebirds
             hockey team. With over 3 years of experience in sports medicine,
             Phil is dedicated to ensuring the health and performance of the
             team.
           </p>
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 my-6 transition-text duration-500">
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 my-6 transition-text duration-500"
+          data-aos="fade-up"
+          data-aos-delay="900">
             Employment
           </h3>
           <div className="flex flex-col items-center justify-center">
-            <div className="flex gap-4">
-              <div className="flex flex-col w-1/2 space-y-4">
+            <div className="flex flex-col lg:flex-row gap-4">
+              <div className="flex flex-col w-full lg:w-1/2 space-y-4">
                 {jobs.map((job) => (
                   <div
                     key={job.id}
-                    className="flex items-start gap-4 text-gray-800 dark:text-gray-200 hover:text-gray-200 hover:bg-gray-800 transition duration-500 p-6 rounded-lg"
+                    data-aos="fade-up"
+                    data-aos-delay="900"
+                    className="flex lg:flex-row flex-col items-center lg:items-start gap-4 text-gray-800 dark:text-gray-200 hover:text-gray-200 hover:bg-gray-800 transition duration-500 p-6 rounded-lg"
                     onMouseEnter={() => setHoveredJob(job.id)}
                     onMouseLeave={() => setHoveredJob(null)}
                   >
@@ -180,7 +197,9 @@ export default function Home() {
               </div>
               <div className="overflow-hidden w-1/2 h-full rounded-lg">
                 <Image
-                  className={`inset-0 w-full h-[550px] max-h-[550px] object-cover transition-opacity duration-300 ${
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  className={`hidden lg:block inset-0 w-full h-[550px] max-h-[550px] object-cover transition-opacity duration-300 ${
                     isFading ? "opacity-0" : "opacity-100"
                   }`}
                   src={currentImage}
@@ -194,7 +213,8 @@ export default function Home() {
         </section>
       </main>
       <footer>
-        <p className="text-center text-gray-600 dark:text-gray-400 transition-text duration-500 mt-16">
+        <p className="text-center text-gray-600 dark:text-gray-400 transition-text duration-500 mt-16"
+        data-aos="fade-up">
           &copy; 2021 Phil Fazio. All rights reserved.
         </p>
       </footer>
