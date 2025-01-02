@@ -158,7 +158,7 @@ export default function Home() {
           </p>
           <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 my-6 transition-text duration-500"
           data-aos="fade-up"
-          data-aos-delay="900">
+          data-aos-delay="600">
             Employment
           </h3>
           <div className="flex flex-col items-center justify-center">
@@ -168,7 +168,7 @@ export default function Home() {
                   <div
                     key={job.id}
                     data-aos="fade-up"
-                    data-aos-delay="900"
+                    data-aos-delay="600"
                     className="flex lg:flex-row flex-col items-center lg:items-start gap-4 text-gray-800 dark:text-gray-200 hover:text-gray-200 hover:bg-gray-800 transition duration-500 p-6 rounded-lg"
                     onMouseEnter={() => setHoveredJob(job.id)}
                     onMouseLeave={() => setHoveredJob(null)}
