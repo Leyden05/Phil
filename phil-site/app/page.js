@@ -198,7 +198,7 @@ export default function Home() {
               <div className="overflow-hidden w-1/2 h-full rounded-lg">
                 <Image
                   data-aos="fade-up"
-                  data-aos-delay="600"
+                  data-aos-delay="300"
                   className={`hidden lg:block inset-0 w-full h-[550px] max-h-[550px] object-cover transition-opacity duration-300 ${
                     isFading ? "opacity-0" : "opacity-100"
                   }`}
