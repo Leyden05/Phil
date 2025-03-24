@@ -86,7 +86,7 @@ export default function Home() {
             Head Athletic Trainer for the Flint Firebirds
           </p>
         </div>
-        <div className="hidden lg:block absolute top-40 right-20 w-1/3 h-3/4 bg-lightGold rounded-lg transform rotate-12 z-0"
+        <div className="hidden lg:block absolute top-40 right-20 lg:w-1/5 xl:w-1/3 lg:h-1/2 xl:h-3/4 bg-lightGold rounded-lg transform rotate-12 z-0"
         data-aos="fade-up"></div>
         <Image
           className="md:block hidden rounded-lg w-1/2 max-w-[40%] h-3/4 z-10"
@@ -157,7 +157,7 @@ export default function Home() {
             Phil is dedicated to ensuring the health and performance of the
             team.
           </p>
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 my-6 transition-text duration-500"
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 my-12 transition-text duration-500"
           data-aos="fade-up"
           data-aos-delay="600">
             Employment
@@ -183,7 +183,7 @@ export default function Home() {
                     />
                     <div>
                       <h4 className="text-lg font-semibold">{job.title}</h4>
-                      <p>{job.description}</p>
+                      <p className="text-gray-600 dark:text-gray-400">{job.description}</p>
                       <a
                         href={job.link}
                         className="text-blue-500"
