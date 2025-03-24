@@ -94,6 +94,7 @@ export default function Home() {
           alt="Phil Fazio"
           width={1000}
           height={1500}
+          data-aos="fade-up"
           priority
         />
       </header>
@@ -197,8 +198,6 @@ export default function Home() {
               </div>
               <div className="overflow-hidden w-1/2 h-full rounded-lg">
                 <Image
-                  data-aos="fade-up"
-                  data-aos-delay="300"
                   className={`hidden lg:block inset-0 w-full h-[550px] max-h-[550px] object-cover transition-opacity duration-300 ${
                     isFading ? "opacity-0" : "opacity-100"
                   }`}
@@ -213,8 +212,7 @@ export default function Home() {
         </section>
       </main>
       <footer>
-        <p className="text-center text-gray-600 dark:text-gray-400 transition-text duration-500 mt-16"
-        data-aos="fade-up">
+        <p className="pt-12 lg:pt-40 text-center text-gray-600 dark:text-gray-400 transition-text duration-500 mt-16">
           &copy; 2021 Phil Fazio. All rights reserved.
         </p>
       </footer>
