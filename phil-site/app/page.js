@@ -165,6 +165,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col lg:flex-row gap-4">
               <div className="flex flex-col w-full lg:w-1/2 space-y-4">
+              {/* Insert timeline based on job loop. Possible to add to div? */}
                 {jobs.map((job) => (
                   <div
                     key={job.id}
