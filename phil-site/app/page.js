@@ -57,7 +57,7 @@ export default function Home() {
       title: "Athletic Trainer for the Michigan Panthers",
       description:
         "Phil has experience working as an athletic trainer for the Michigan Panthers, where he was responsible for the players' physical health and injury prevention.",
-      link: "https://example.com",
+      link: "https://www.phil-fazio.com",
       logo: "/images/Michigan_Panthers_transparent.png",
       image: "/images/philufl1.jpg",
     },
